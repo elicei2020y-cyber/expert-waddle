@@ -161,7 +161,7 @@ def run_report(model, tok, inp, policy, log):
             if policy == "C_mark":
                 reason = []
                 if not se_ok:
-                    reason.append(f"se отозвано — не сходится se = sd/√n (было {vals['se']})")
+                    reason.append(f"не сходится se = sd/√n (было {vals['se']})")
                 if not t_ok:
                     reason.append(f"t не сошлось при данном se (было {vals['t']})")
                 mark = f"[проверка: поле se отозвано — {'; '.join(reason)}]\n"
