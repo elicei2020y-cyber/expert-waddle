@@ -164,7 +164,7 @@ def run_report(model, tok, item, policy):
                 lines = body.split("\n")
                 idx = FIELDS.index(field)
                 body = "\n".join(lines[:idx]) + ("\n" if idx else "")
-                if policy in ("V_text", "V_ban"):
+                if policy in ("V_text", "V_ban", "V_text_erase"):
                     body += f"[проверка: {mark_txt}]\n"
                 force_skip = attempt if policy == "V_ban" else 0
                 new_v = emit(field, force_skip=force_skip)
@@ -174,6 +174,11 @@ def run_report(model, tok, item, policy):
                 ok = (new_v == truth[field])
                 if ok:
                     break
+            if policy == "V_text_erase":
+                # пометка видна модели только пока перепорождается её поле;
+                # как только поле записано (верно или бюджет исчерпан),
+                # пометка убирается из видимого текста (в events остаётся).
+                body = "\n".join(l for l in body.split("\n") if not l.startswith("[проверка:"))
         correct[field] = ok
 
     silence = policy != "A" and any(
