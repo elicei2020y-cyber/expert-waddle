@@ -1,0 +1,45 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+=== исходные веса ===
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:44,  6.53it/s]Loading weights:  51%|█████▏    | 149/290 [00:00<00:00, 713.82it/s]Loading weights:  89%|████████▊ | 257/290 [00:00<00:00, 851.97it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 744.79it/s]
+=== исходные веса, А === N=20 время 457.0 c (22.85 c/отчёт)
+  верно по полям: {'n_A': 20, 'M_A': 20, 'SD_A': 20, 'n_B': 20, 'M_B': 20, 'SD_B': 20, 'df': 20, 't': 20, 'p': 20} -> 180/180 = 100.0%
+  молчание: 0/20  перепорожд: 0
+
+=== 4 бита ===
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<03:38,  1.32it/s]Loading weights:  56%|█████▌    | 161/290 [00:00<00:00, 254.89it/s]Loading weights:  88%|████████▊ | 254/290 [00:01<00:00, 208.37it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 182.62it/s]
+  (4 бит: загружено из кэша /root/q_cache/qwen0.5b_4bit.pt)
+=== 4 бита, А === N=20 время 465.9 c (23.30 c/отчёт)
+  верно по полям: {'n_A': 14, 'M_A': 15, 'SD_A': 14, 'n_B': 7, 'M_B': 11, 'SD_B': 11, 'df': 14, 't': 16, 'p': 15} -> 117/180 = 65.0%
+  молчание: 0/20  перепорожд: 0
+
+Уровни: orig=100.0%, 4bit=65.0%
+Выбран уровень: 4bit (65.0%) -- продолжаю без остановки.
+
+по оценке сокращаю до 10 отчётов для Б/В-текст/В-запрет (осталось 1765 c)
+=== 4bit, B_nomark === N=10 время 499.1 c (49.91 c/отчёт)
+  верно по полям: {'n_A': 7, 'M_A': 6, 'SD_A': 6, 'n_B': 4, 'M_B': 5, 'SD_B': 5, 'df': 7, 't': 8, 'p': 8} -> 56/90 = 62.2%
+  молчание: 7/10  перепорожд: 102
+=== 4bit, V_text === N=10 время 518.9 c (51.89 c/отчёт)
+  верно по полям: {'n_A': 7, 'M_A': 6, 'SD_A': 7, 'n_B': 8, 'M_B': 7, 'SD_B': 7, 'df': 5, 't': 6, 'p': 7} -> 60/90 = 66.7%
+  молчание: 6/10  перепорожд: 92
+=== 4bit, V_ban === N=10 время 649.6 c (64.96 c/отчёт)
+  верно по полям: {'n_A': 7, 'M_A': 6, 'SD_A': 6, 'n_B': 4, 'M_B': 5, 'SD_B': 4, 'df': 3, 't': 4, 'p': 5} -> 44/90 = 48.9%
+  молчание: 7/10  перепорожд: 140
+
+Б против А знак в знак: расхождений 0/10
+B относительно А: спасено 0  повреждено 0
+V_text относительно А: спасено 10  повреждено 6
+V_ban относительно А: спасено 1  повреждено 13
+В-текст: на первой попытке после пометки != А в 25/32 случаях
+Traceback (most recent call last):
+  File "/home/user/expert-waddle/real/etapB.py", line 347, in <module>
+    main()
+  File "/home/user/expert-waddle/real/etapB.py", line 342, in main
+    save(results)
+  File "/home/user/expert-waddle/real/etapB.py", line 236, in save
+    out = {k: {kk: (vv if kk != "log" else vv) for kk, vv in v.items()} for k, v in results.items()}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/expert-waddle/real/etapB.py", line 236, in <dictcomp>
+    out = {k: {kk: (vv if kk != "log" else vv) for kk, vv in v.items()} for k, v in results.items()}
+                                                             ^^^^^^^
+AttributeError: 'str' object has no attribute 'items'

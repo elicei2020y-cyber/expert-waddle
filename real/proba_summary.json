@@ -1,0 +1,45 @@
+{
+  "A": {
+    "field_ok": {
+      "df": 15,
+      "t": 0,
+      "se": 2,
+      "d": 3
+    },
+    "n_delivered": 20,
+    "n_silent": 0,
+    "regen_total": 0,
+    "time": 83.25501227378845,
+    "per_report": 4.162750613689423
+  },
+  "B_nomark": {
+    "field_ok": {
+      "df": 0,
+      "t": 0,
+      "se": 0,
+      "d": 0
+    },
+    "n_delivered": 0,
+    "n_silent": 20,
+    "regen_total": 60,
+    "time": 138.36406064033508,
+    "per_report": 6.918203032016754,
+    "saved_vs_A": 0,
+    "damaged_vs_A": 0
+  },
+  "C_mark": {
+    "field_ok": {
+      "df": 0,
+      "t": 0,
+      "se": 0,
+      "d": 0
+    },
+    "n_delivered": 0,
+    "n_silent": 20,
+    "regen_total": 60,
+    "time": 147.96695852279663,
+    "per_report": 7.398347926139832,
+    "saved_vs_A": 0,
+    "damaged_vs_A": 2
+  }
+}

@@ -1,0 +1,2 @@
+numpy>=1.24
+# torch и transformers ставятся отдельно, см. ZADANIE.md (CPU-сборка torch)

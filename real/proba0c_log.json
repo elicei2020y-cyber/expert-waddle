@@ -1,0 +1,4055 @@
+{
+  "A": {
+    "log": [
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.4,
+          "t": 2.0,
+          "d": 0.44
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.4,
+          "t": 3.0000000000000004,
+          "d": 0.33333333333333337
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 80\nse = 0.40\nt = 2.00\nd = 0.44\n",
+        "inp": {
+          "n": 81,
+          "M": 5.2,
+          "sd": 3.6,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.1,
+          "t": 3.6,
+          "d": 0.72
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.1,
+          "t": -3.999999999999999,
+          "d": -0.7999999999999998
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 24\nse = 0.10\nt = 3.60\nd = 0.72\n",
+        "inp": {
+          "n": 25,
+          "M": 3.6,
+          "sd": 0.5,
+          "mu": 4.0,
+          "t_true": -4
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 0.25,
+          "t": 1.8,
+          "d": 0.38
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.2,
+          "t": 2.9999999999999982,
+          "d": 0.3749999999999998
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 63\nse = 0.25\nt = 1.80\nd = 0.38\n",
+        "inp": {
+          "n": 64,
+          "M": 4.6,
+          "sd": 1.6,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 2.0,
+          "d": 0.31
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -2.9999999999999987,
+          "d": -0.4285714285714283
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 48\nse = 0.10\nt = 2.00\nd = 0.31\n",
+        "inp": {
+          "n": 49,
+          "M": 3.7,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -3
+        }
+      },
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.4,
+          "t": 3.0,
+          "d": 0.83
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.4,
+          "t": 5.0,
+          "d": 0.5555555555555556
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 80\nse = 0.40\nt = 3.00\nd = 0.83\n",
+        "inp": {
+          "n": 81,
+          "M": 6.0,
+          "sd": 3.6,
+          "mu": 4.0,
+          "t_true": 5
+        }
+      },
+      {
+        "vals": {
+          "df": 15.0,
+          "se": 0.2,
+          "t": 2.5,
+          "d": 0.5
+        },
+        "truth": {
+          "df": 15,
+          "se": 0.2,
+          "t": 2.9999999999999982,
+          "d": 0.7499999999999996
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 15\nse = 0.20\nt = 2.50\nd = 0.50\n",
+        "inp": {
+          "n": 16,
+          "M": 4.6,
+          "sd": 0.8,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.3,
+          "t": 0.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.3,
+          "t": -5.0,
+          "d": -1.0
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 24\nse = 0.30\nt = 0.00\nd = 0.00\n",
+        "inp": {
+          "n": 25,
+          "M": 2.5,
+          "sd": 1.5,
+          "mu": 4.0,
+          "t_true": -5
+        }
+      },
+      {
+        "vals": {
+          "df": 35.0,
+          "se": 0.2,
+          "t": 1.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 35,
+          "se": 0.19999999999999998,
+          "t": 5.0,
+          "d": 0.8333333333333334
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 35\nse = 0.20\nt = 1.00\nd = 0.00\n",
+        "inp": {
+          "n": 36,
+          "M": 5.0,
+          "sd": 1.2,
+          "mu": 4.0,
+          "t_true": 5
+        }
+      },
+      {
+        "vals": {
+          "df": 99.0,
+          "se": 0.2,
+          "t": 0.4,
+          "d": 0.2
+        },
+        "truth": {
+          "df": 99,
+          "se": 0.2,
+          "t": 2.0000000000000018,
+          "d": 0.20000000000000018
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 99\nse = 0.20\nt = 0.40\nd = 0.20\n",
+        "inp": {
+          "n": 100,
+          "M": 4.4,
+          "sd": 2.0,
+          "mu": 4.0,
+          "t_true": 2
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.31,
+          "t": 1.0,
+          "d": 0.31
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.2,
+          "t": -3.0000000000000004,
+          "d": -0.6000000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 24\nse = 0.31\nt = 1.00\nd = 0.31\n",
+        "inp": {
+          "n": 25,
+          "M": 3.4,
+          "sd": 1.0,
+          "mu": 4.0,
+          "t_true": -3
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 3.0,
+          "d": 0.45
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -1.0000000000000009,
+          "d": -0.142857142857143
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 48\nse = 0.10\nt = 3.00\nd = 0.45\n",
+        "inp": {
+          "n": 49,
+          "M": 3.9,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 0.4,
+          "t": 0.5,
+          "d": 0.13
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.4,
+          "t": 1.0000000000000009,
+          "d": 0.1250000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 63\nse = 0.40\nt = 0.50\nd = 0.13\n",
+        "inp": {
+          "n": 64,
+          "M": 4.4,
+          "sd": 3.2,
+          "mu": 4.0,
+          "t_true": 1
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 0.25,
+          "t": 1.0,
+          "d": 0.25
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.2,
+          "t": -1.0000000000000009,
+          "d": -0.1250000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 63\nse = 0.25\nt = 1.00\nd = 0.25\n",
+        "inp": {
+          "n": 64,
+          "M": 3.8,
+          "sd": 1.6,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      },
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.6,
+          "t": 0.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.5,
+          "t": -5.0,
+          "d": -0.5555555555555556
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": true
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 80\nse = 0.60\nt = 0.00\nd = 0.00\n",
+        "inp": {
+          "n": 81,
+          "M": 1.5,
+          "sd": 4.5,
+          "mu": 4.0,
+          "t_true": -5
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 3.0,
+          "d": 0.45
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -1.0000000000000009,
+          "d": -0.142857142857143
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [],
+        "regen_total": 0,
+        "silence": false,
+        "body": "df = 48\nse = 0.10\nt = 3.00\nd = 0.45\n",
+        "inp": {
+          "n": 49,
+          "M": 3.9,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      }
+    ],
+    "time": 233.7722396850586,
+    "field_ok": {
+      "df": 15,
+      "se": 11,
+      "t": 0,
+      "d": 5
+    },
+    "frac": 0.5166666666666667
+  },
+  "B_nomark": {
+    "log": [
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.4,
+          "t": 2.0,
+          "d": 0.44
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.4,
+          "t": 3.0000000000000004,
+          "d": 0.33333333333333337
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.44,
+            "new": 0.44,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.44,
+            "new": 0.44,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.44,
+            "new": 0.44,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 80\nse = 0.40\nt = 2.00\nd = 0.44\n",
+        "inp": {
+          "n": 81,
+          "M": 5.2,
+          "sd": 3.6,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.1,
+          "t": 3.6,
+          "d": 0.72
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.1,
+          "t": -3.999999999999999,
+          "d": -0.7999999999999998
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.6,
+            "new": 3.6,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 3.6,
+            "new": 3.6,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 3.6,
+            "new": 3.6,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 3,
+        "silence": true,
+        "body": "df = 24\nse = 0.10\nt = 3.60\nd = 0.72\n",
+        "inp": {
+          "n": 25,
+          "M": 3.6,
+          "sd": 0.5,
+          "mu": 4.0,
+          "t_true": -4
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 0.25,
+          "t": 1.8,
+          "d": 0.38
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.2,
+          "t": 2.9999999999999982,
+          "d": 0.3749999999999998
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 1.8,
+            "new": 1.8,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.8,
+            "new": 1.8,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.8,
+            "new": 1.8,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.38,
+            "new": 0.38,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.38,
+            "new": 0.38,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.38,
+            "new": 0.38,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 9,
+        "silence": true,
+        "body": "df = 63\nse = 0.25\nt = 1.80\nd = 0.38\n",
+        "inp": {
+          "n": 64,
+          "M": 4.6,
+          "sd": 1.6,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 2.0,
+          "d": 0.31
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -2.9999999999999987,
+          "d": -0.4285714285714283
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 48\nse = 0.10\nt = 2.00\nd = 0.31\n",
+        "inp": {
+          "n": 49,
+          "M": 3.7,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -3
+        }
+      },
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.4,
+          "t": 3.0,
+          "d": 0.83
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.4,
+          "t": 5.0,
+          "d": 0.5555555555555556
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.83,
+            "new": 0.83,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.83,
+            "new": 0.83,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.83,
+            "new": 0.83,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 80\nse = 0.40\nt = 3.00\nd = 0.83\n",
+        "inp": {
+          "n": 81,
+          "M": 6.0,
+          "sd": 3.6,
+          "mu": 4.0,
+          "t_true": 5
+        }
+      },
+      {
+        "vals": {
+          "df": 15.0,
+          "se": 0.2,
+          "t": 2.5,
+          "d": 0.5
+        },
+        "truth": {
+          "df": 15,
+          "se": 0.2,
+          "t": 2.9999999999999982,
+          "d": 0.7499999999999996
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 2.5,
+            "new": 2.5,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 2.5,
+            "new": 2.5,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 2.5,
+            "new": 2.5,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 15\nse = 0.20\nt = 2.50\nd = 0.50\n",
+        "inp": {
+          "n": 16,
+          "M": 4.6,
+          "sd": 0.8,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.3,
+          "t": 0.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.3,
+          "t": -5.0,
+          "d": -1.0
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 3,
+        "silence": true,
+        "body": "df = 24\nse = 0.30\nt = 0.00\nd = 0.00\n",
+        "inp": {
+          "n": 25,
+          "M": 2.5,
+          "sd": 1.5,
+          "mu": 4.0,
+          "t_true": -5
+        }
+      },
+      {
+        "vals": {
+          "df": 35.0,
+          "se": 0.2,
+          "t": 1.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 35,
+          "se": 0.19999999999999998,
+          "t": 5.0,
+          "d": 0.8333333333333334
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 35\nse = 0.20\nt = 1.00\nd = 0.00\n",
+        "inp": {
+          "n": 36,
+          "M": 5.0,
+          "sd": 1.2,
+          "mu": 4.0,
+          "t_true": 5
+        }
+      },
+      {
+        "vals": {
+          "df": 99.0,
+          "se": 0.2,
+          "t": 0.4,
+          "d": 0.2
+        },
+        "truth": {
+          "df": 99,
+          "se": 0.2,
+          "t": 2.0000000000000018,
+          "d": 0.20000000000000018
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.4,
+            "new": 0.4,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.4,
+            "new": 0.4,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.4,
+            "new": 0.4,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 3,
+        "silence": true,
+        "body": "df = 99\nse = 0.20\nt = 0.40\nd = 0.20\n",
+        "inp": {
+          "n": 100,
+          "M": 4.4,
+          "sd": 2.0,
+          "mu": 4.0,
+          "t_true": 2
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.31,
+          "t": 1.0,
+          "d": 0.31
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.2,
+          "t": -3.0000000000000004,
+          "d": -0.6000000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 9,
+        "silence": true,
+        "body": "df = 24\nse = 0.31\nt = 1.00\nd = 0.31\n",
+        "inp": {
+          "n": 25,
+          "M": 3.4,
+          "sd": 1.0,
+          "mu": 4.0,
+          "t_true": -3
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 3.0,
+          "d": 0.45
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -1.0000000000000009,
+          "d": -0.142857142857143
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.45,
+            "new": 0.45,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.45,
+            "new": 0.45,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.45,
+            "new": 0.45,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 48\nse = 0.10\nt = 3.00\nd = 0.45\n",
+        "inp": {
+          "n": 49,
+          "M": 3.9,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 0.4,
+          "t": 0.5,
+          "d": 0.13
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.4,
+          "t": 1.0000000000000009,
+          "d": 0.1250000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 3,
+        "silence": true,
+        "body": "df = 63\nse = 0.40\nt = 0.50\nd = 0.13\n",
+        "inp": {
+          "n": 64,
+          "M": 4.4,
+          "sd": 3.2,
+          "mu": 4.0,
+          "t_true": 1
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 0.25,
+          "t": 1.0,
+          "d": 0.25
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.2,
+          "t": -1.0000000000000009,
+          "d": -0.1250000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 9,
+        "silence": true,
+        "body": "df = 63\nse = 0.25\nt = 1.00\nd = 0.25\n",
+        "inp": {
+          "n": 64,
+          "M": 3.8,
+          "sd": 1.6,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      },
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.6,
+          "t": 0.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.5,
+          "t": -5.0,
+          "d": -0.5555555555555556
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.6,
+            "new": 0.6,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 0.6,
+            "new": 0.6,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 0.6,
+            "new": 0.6,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 80\nse = 0.60\nt = 0.00\nd = 0.00\n",
+        "inp": {
+          "n": 81,
+          "M": 1.5,
+          "sd": 4.5,
+          "mu": 4.0,
+          "t_true": -5
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 3.0,
+          "d": 0.45
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -1.0000000000000009,
+          "d": -0.142857142857143
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.45,
+            "new": 0.45,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.45,
+            "new": 0.45,
+            "mark": null,
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.45,
+            "new": 0.45,
+            "mark": null,
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 48\nse = 0.10\nt = 3.00\nd = 0.45\n",
+        "inp": {
+          "n": 49,
+          "M": 3.9,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      }
+    ],
+    "time": 581.9453504085541,
+    "field_ok": {
+      "df": 15,
+      "se": 11,
+      "t": 0,
+      "d": 5
+    },
+    "n_silent": 15,
+    "regen_total": 87,
+    "mismatch_vs_A": 0,
+    "saved_vs_A": 0,
+    "damaged_vs_A": 0
+  },
+  "V_text": {
+    "log": [
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.4,
+          "t": 1.4,
+          "d": 0.33
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.4,
+          "t": 3.0000000000000004,
+          "d": 0.33333333333333337
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 2.0,
+            "new": 1.4,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.4,
+            "new": 1.4,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.4)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.4,
+            "new": 1.4,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.4)",
+            "changed": false
+          }
+        ],
+        "regen_total": 3,
+        "silence": true,
+        "body": "df = 80\nse = 0.40\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 1.4)]\nt = 1.4\nd = 0.33\n",
+        "inp": {
+          "n": 81,
+          "M": 5.2,
+          "sd": 3.6,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.1,
+          "t": 7.2,
+          "d": 0.8
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.1,
+          "t": -3.999999999999999,
+          "d": -0.7999999999999998
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.6,
+            "new": 7.2,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.6)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 7.2,
+            "new": 7.2,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 7.2)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 7.2,
+            "new": 7.2,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 7.2)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.8,
+            "new": 0.8,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.8)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.8,
+            "new": 0.8,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.8)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.8,
+            "new": 0.8,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.8)",
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 24\nse = 0.10\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 7.2)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 0.8)]\nd = 0.80\n",
+        "inp": {
+          "n": 25,
+          "M": 3.6,
+          "sd": 0.5,
+          "mu": 4.0,
+          "t_true": -4
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 0.25,
+          "t": 2.0,
+          "d": 0.4
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.2,
+          "t": 2.9999999999999982,
+          "d": 0.3749999999999998
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.25)",
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.25)",
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.25)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.4,
+            "new": 0.4,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.4)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.4,
+            "new": 0.4,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.4)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.4,
+            "new": 0.4,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.4)",
+            "changed": false
+          }
+        ],
+        "regen_total": 9,
+        "silence": true,
+        "body": "df = 63\n[проверка: поле se отозвано — не сходится se = sd/√n (было 0.25)]\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 2.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 0.4)]\nd = 0.40\n",
+        "inp": {
+          "n": 64,
+          "M": 4.6,
+          "sd": 1.6,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 2.0,
+          "d": 0.5
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -2.9999999999999987,
+          "d": -0.4285714285714283
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 48\nse = 0.10\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 2.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)]\nd = 0.50\n",
+        "inp": {
+          "n": 49,
+          "M": 3.7,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -3
+        }
+      },
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.4,
+          "t": 1.67,
+          "d": 0.44
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.4,
+          "t": 5.0,
+          "d": 0.5555555555555556
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.0,
+            "new": 1.67,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.67,
+            "new": 1.67,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.67)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.67,
+            "new": 1.67,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.67)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.44,
+            "new": 0.44,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.44)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.44,
+            "new": 0.44,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.44)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.44,
+            "new": 0.44,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.44)",
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 80\nse = 0.40\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 1.67)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 0.44)]\nd = 0.44\n",
+        "inp": {
+          "n": 81,
+          "M": 6.0,
+          "sd": 3.6,
+          "mu": 4.0,
+          "t_true": 5
+        }
+      },
+      {
+        "vals": {
+          "df": 15.0,
+          "se": 0.2,
+          "t": 6.0,
+          "d": 0.5
+        },
+        "truth": {
+          "df": 15,
+          "se": 0.2,
+          "t": 2.9999999999999982,
+          "d": 0.7499999999999996
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 2.5,
+            "new": 6.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.5)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 6.0,
+            "new": 6.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 6.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 6.0,
+            "new": 6.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 6.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 15\nse = 0.20\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 6.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)]\nd = 0.50\n",
+        "inp": {
+          "n": 16,
+          "M": 4.6,
+          "sd": 0.8,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.3,
+          "t": 0.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.3,
+          "t": -5.0,
+          "d": -1.0
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": false
+          }
+        ],
+        "regen_total": 3,
+        "silence": true,
+        "body": "df = 24\nse = 0.30\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 0.0)]\nt = 0.00\nd = 0.00\n",
+        "inp": {
+          "n": 25,
+          "M": 2.5,
+          "sd": 1.5,
+          "mu": 4.0,
+          "t_true": -5
+        }
+      },
+      {
+        "vals": {
+          "df": 35.0,
+          "se": 0.2,
+          "t": 1.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 35,
+          "se": 0.19999999999999998,
+          "t": 5.0,
+          "d": 0.8333333333333334
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)",
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 35\nse = 0.20\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 1.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)]\nd = 0.00\n",
+        "inp": {
+          "n": 36,
+          "M": 5.0,
+          "sd": 1.2,
+          "mu": 4.0,
+          "t_true": 5
+        }
+      },
+      {
+        "vals": {
+          "df": 99.0,
+          "se": 0.2,
+          "t": 0.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 99,
+          "se": 0.2,
+          "t": 2.0000000000000018,
+          "d": 0.20000000000000018
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.4,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.4)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": false
+          }
+        ],
+        "regen_total": 3,
+        "silence": true,
+        "body": "df = 99\nse = 0.20\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 0.0)]\nt = 0.00\nd = 0.00\n",
+        "inp": {
+          "n": 100,
+          "M": 4.4,
+          "sd": 2.0,
+          "mu": 4.0,
+          "t_true": 2
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.31,
+          "t": 1.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.2,
+          "t": -3.0000000000000004,
+          "d": -0.6000000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.31)",
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.31)",
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 0.31,
+            "new": 0.31,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.31)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)",
+            "changed": false
+          }
+        ],
+        "regen_total": 9,
+        "silence": true,
+        "body": "df = 24\n[проверка: поле se отозвано — не сходится se = sd/√n (было 0.31)]\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 1.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)]\nd = 0.0\n",
+        "inp": {
+          "n": 25,
+          "M": 3.4,
+          "sd": 1.0,
+          "mu": 4.0,
+          "t_true": -3
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 5.0,
+          "d": 0.5
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -1.0000000000000009,
+          "d": -0.142857142857143
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.0,
+            "new": 5.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 5.0,
+            "new": 5.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 5.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 5.0,
+            "new": 5.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 5.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 48\nse = 0.10\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 5.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)]\nd = 0.50\n",
+        "inp": {
+          "n": 49,
+          "M": 3.9,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 0.4,
+          "t": 0.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.4,
+          "t": 1.0000000000000009,
+          "d": 0.1250000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.5)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": false
+          }
+        ],
+        "regen_total": 3,
+        "silence": true,
+        "body": "df = 63\nse = 0.40\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 0.0)]\nt = 0.00\nd = 0.00\n",
+        "inp": {
+          "n": 64,
+          "M": 4.4,
+          "sd": 3.2,
+          "mu": 4.0,
+          "t_true": 1
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 0.25,
+          "t": 1.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.2,
+          "t": -1.0000000000000009,
+          "d": -0.1250000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.25)",
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.25)",
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 0.25,
+            "new": 0.25,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.25)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)",
+            "changed": false
+          }
+        ],
+        "regen_total": 9,
+        "silence": true,
+        "body": "df = 63\n[проверка: поле se отозвано — не сходится se = sd/√n (было 0.25)]\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 1.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)]\nd = 0.0\n",
+        "inp": {
+          "n": 64,
+          "M": 3.8,
+          "sd": 1.6,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      },
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.6,
+          "t": 0.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.5,
+          "t": -5.0,
+          "d": -0.5555555555555556
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.6,
+            "new": 0.6,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.6)",
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 0.6,
+            "new": 0.6,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.6)",
+            "changed": false
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 0.6,
+            "new": 0.6,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.6)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 80\n[проверка: поле se отозвано — не сходится se = sd/√n (было 0.6)]\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 0.0)]\nt = 0.0\nd = 0.0\n",
+        "inp": {
+          "n": 81,
+          "M": 1.5,
+          "sd": 4.5,
+          "mu": 4.0,
+          "t_true": -5
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 5.0,
+          "d": 0.5
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -1.0000000000000009,
+          "d": -0.142857142857143
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.0,
+            "new": 5.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 5.0,
+            "new": 5.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 5.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 5.0,
+            "new": 5.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 5.0)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 0.5,
+            "new": 0.5,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": false
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 48\nse = 0.10\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 5.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)]\nd = 0.50\n",
+        "inp": {
+          "n": 49,
+          "M": 3.9,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      }
+    ],
+    "time": 611.155308008194,
+    "field_ok": {
+      "df": 15,
+      "se": 11,
+      "t": 0,
+      "d": 5
+    },
+    "n_silent": 15,
+    "regen_total": 87,
+    "saved_vs_A": 1,
+    "damaged_vs_A": 1,
+    "changed_vs_A_first_attempt": 17,
+    "first_attempts_total": 29
+  },
+  "V_ban": {
+    "log": [
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.4,
+          "t": 2.0,
+          "d": 3.0
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.4,
+          "t": 3.0000000000000004,
+          "d": 0.33333333333333337
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 2.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 4.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 4.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 4.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.4,
+            "new": 1.44,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.4)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.44,
+            "new": 2.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.44)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 80\nse = 0.40\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 4.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)]\nd = 3.00\n",
+        "inp": {
+          "n": 81,
+          "M": 5.2,
+          "sd": 3.6,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.1,
+          "t": 3.0,
+          "d": 4.0
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.1,
+          "t": -3.999999999999999,
+          "d": -0.7999999999999998
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.6,
+            "new": 3.6,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.6)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 3.6,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.6)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 3.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 1.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 4.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 24\nse = 0.10\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 0.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)]\nd = 4.00\n",
+        "inp": {
+          "n": 25,
+          "M": 3.6,
+          "sd": 0.5,
+          "mu": 4.0,
+          "t_true": -4
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 3.0,
+          "t": 4.0,
+          "d": 3.0
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.2,
+          "t": 2.9999999999999982,
+          "d": 0.3749999999999998
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.25,
+            "new": 1.6,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.25)",
+            "changed": true
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 1.6,
+            "new": 2.0,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 1.6)",
+            "changed": true
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.5)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 2.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 4.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.4,
+            "new": 1.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.4)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 9,
+        "silence": true,
+        "body": "df = 63\n[проверка: поле se отозвано — не сходится se = sd/√n (было 2.0)]\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 0.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)]\nd = 3.00\n",
+        "inp": {
+          "n": 64,
+          "M": 4.6,
+          "sd": 1.6,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 4.0,
+          "d": 3.0
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -2.9999999999999987,
+          "d": -0.4285714285714283
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 2.0,
+            "new": 5.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 5.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 5.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.0,
+            "new": 4.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.4,
+            "new": 1.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.4)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 48\nse = 0.10\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 1.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)]\nd = 3.00\n",
+        "inp": {
+          "n": 49,
+          "M": 3.7,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -3
+        }
+      },
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 0.4,
+          "t": 3.33,
+          "d": 3.33
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.4,
+          "t": 5.0,
+          "d": 0.5555555555555556
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 3.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 0.0,
+            "new": 3.33,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.88,
+            "new": 1.67,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.88)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.67,
+            "new": 2.22,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.67)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 2.22,
+            "new": 3.33,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 2.22)",
+            "changed": true
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 80\nse = 0.40\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 0.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 2.22)]\nd = 3.33\n",
+        "inp": {
+          "n": 81,
+          "M": 6.0,
+          "sd": 3.6,
+          "mu": 4.0,
+          "t_true": 5
+        }
+      },
+      {
+        "vals": {
+          "df": 15.0,
+          "se": 0.2,
+          "t": 2.5,
+          "d": 1.0
+        },
+        "truth": {
+          "df": 15,
+          "se": 0.2,
+          "t": 2.9999999999999982,
+          "d": 0.7499999999999996
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 2.5,
+            "new": 2.5,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.5)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 2.5,
+            "new": 5.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.5)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 5.0,
+            "new": 2.5,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 5.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 1.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 5.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 5.0,
+            "new": 1.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 5.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 15\nse = 0.20\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 5.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 5.0)]\nd = 1.00\n",
+        "inp": {
+          "n": 16,
+          "M": 4.6,
+          "sd": 0.8,
+          "mu": 4.0,
+          "t_true": 3
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 0.3,
+          "t": 3.33,
+          "d": 3.33
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.3,
+          "t": -5.0,
+          "d": -1.0
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.33,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.53,
+            "new": 1.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.53)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.33,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 24\nse = 0.30\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 2.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)]\nd = 3.33\n",
+        "inp": {
+          "n": 25,
+          "M": 2.5,
+          "sd": 1.5,
+          "mu": 4.0,
+          "t_true": -5
+        }
+      },
+      {
+        "vals": {
+          "df": 35.0,
+          "se": 0.2,
+          "t": 3.33,
+          "d": 3.33
+        },
+        "truth": {
+          "df": 35,
+          "se": 0.19999999999999998,
+          "t": 5.0,
+          "d": 0.8333333333333334
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 1.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.33,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.44,
+            "new": 1.25,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.44)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.25,
+            "new": 2.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.25)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.33,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 35\nse = 0.20\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 2.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)]\nd = 3.33\n",
+        "inp": {
+          "n": 36,
+          "M": 5.0,
+          "sd": 1.2,
+          "mu": 4.0,
+          "t_true": 5
+        }
+      },
+      {
+        "vals": {
+          "df": 99.0,
+          "se": 0.2,
+          "t": 2.0,
+          "d": 0.2
+        },
+        "truth": {
+          "df": 99,
+          "se": 0.2,
+          "t": 2.0000000000000018,
+          "d": 0.20000000000000018
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": true,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.4,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.4)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 2,
+        "silence": false,
+        "body": "df = 99\nse = 0.20\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 1.0)]\nt = 2.00\nd = 0.20\n",
+        "inp": {
+          "n": 100,
+          "M": 4.4,
+          "sd": 2.0,
+          "mu": 4.0,
+          "t_true": 2
+        }
+      },
+      {
+        "vals": {
+          "df": 24.0,
+          "se": 3.0,
+          "t": 2.0,
+          "d": 3.0
+        },
+        "truth": {
+          "df": 24,
+          "se": 0.2,
+          "t": -3.0000000000000004,
+          "d": -0.6000000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.31,
+            "new": 1.0,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.31)",
+            "changed": true
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 1.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 1.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.5)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 9,
+        "silence": true,
+        "body": "df = 24\n[проверка: поле se отозвано — не сходится se = sd/√n (было 2.0)]\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 1.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)]\nd = 3.00\n",
+        "inp": {
+          "n": 25,
+          "M": 3.4,
+          "sd": 1.0,
+          "mu": 4.0,
+          "t_true": -3
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 0.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -1.0000000000000009,
+          "d": -0.142857142857143
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 3.0,
+            "new": 4.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 4.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 4.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 3,
+        "silence": true,
+        "body": "df = 48\nse = 0.10\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 4.0)]\nt = 0.00\nd = 0.00\n",
+        "inp": {
+          "n": 49,
+          "M": 3.9,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 0.4,
+          "t": 1.0,
+          "d": 3.0
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.4,
+          "t": 1.0000000000000009,
+          "d": 0.1250000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": true,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.5,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.5)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.08,
+            "new": 1.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.08)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 4,
+        "silence": true,
+        "body": "df = 63\nse = 0.40\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 0.5)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)]\nd = 3.00\n",
+        "inp": {
+          "n": 64,
+          "M": 4.4,
+          "sd": 3.2,
+          "mu": 4.0,
+          "t_true": 1
+        }
+      },
+      {
+        "vals": {
+          "df": 63.0,
+          "se": 3.0,
+          "t": 3.0,
+          "d": 3.0
+        },
+        "truth": {
+          "df": 63,
+          "se": 0.2,
+          "t": -1.0000000000000009,
+          "d": -0.1250000000000001
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": false
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.25,
+            "new": 1.6,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.25)",
+            "changed": true
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 1.6,
+            "new": 2.0,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 1.6)",
+            "changed": true
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 0.0,
+            "new": 1.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 1,
+            "prev": 0.25,
+            "new": 1.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 0.25)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "d",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 9,
+        "silence": true,
+        "body": "df = 63\n[проверка: поле se отозвано — не сходится se = sd/√n (было 2.0)]\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 2.0)]\n[проверка: поле d отозвано — не сходится d = (M − mu)/sd (было 2.0)]\nd = 3.00\n",
+        "inp": {
+          "n": 64,
+          "M": 3.8,
+          "sd": 1.6,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      },
+      {
+        "vals": {
+          "df": 80.0,
+          "se": 4.5,
+          "t": 3.0,
+          "d": 0.33
+        },
+        "truth": {
+          "df": 80,
+          "se": 0.5,
+          "t": -5.0,
+          "d": -0.5555555555555556
+        },
+        "correct": {
+          "df": true,
+          "se": false,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "se",
+            "attempt": 1,
+            "prev": 0.6,
+            "new": 1.0,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 0.6)",
+            "changed": true
+          },
+          {
+            "field": "se",
+            "attempt": 2,
+            "prev": 1.0,
+            "new": 2.0,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 1.0)",
+            "changed": true
+          },
+          {
+            "field": "se",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 4.5,
+            "mark": "поле se отозвано — не сходится se = sd/√n (было 2.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 1.5,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 1.5)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 0.0,
+            "new": 2.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 0.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 2.0,
+            "new": 3.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 2.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 6,
+        "silence": true,
+        "body": "df = 80\n[проверка: поле se отозвано — не сходится se = sd/√n (было 2.0)]\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 2.0)]\nt = 3.00\nd = 0.33\n",
+        "inp": {
+          "n": 81,
+          "M": 1.5,
+          "sd": 4.5,
+          "mu": 4.0,
+          "t_true": -5
+        }
+      },
+      {
+        "vals": {
+          "df": 48.0,
+          "se": 0.1,
+          "t": 0.0,
+          "d": 0.0
+        },
+        "truth": {
+          "df": 48,
+          "se": 0.09999999999999999,
+          "t": -1.0000000000000009,
+          "d": -0.142857142857143
+        },
+        "correct": {
+          "df": true,
+          "se": true,
+          "t": false,
+          "d": true
+        },
+        "events": [
+          {
+            "field": "t",
+            "attempt": 1,
+            "prev": 3.0,
+            "new": 3.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.0)",
+            "changed": false
+          },
+          {
+            "field": "t",
+            "attempt": 2,
+            "prev": 3.0,
+            "new": 4.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 3.0)",
+            "changed": true
+          },
+          {
+            "field": "t",
+            "attempt": 3,
+            "prev": 4.0,
+            "new": 0.0,
+            "mark": "поле t отозвано — не сходится t = (M − mu)/se (было 4.0)",
+            "changed": true
+          }
+        ],
+        "regen_total": 3,
+        "silence": true,
+        "body": "df = 48\nse = 0.10\n[проверка: поле t отозвано — не сходится t = (M − mu)/se (было 4.0)]\nt = 0.00\nd = 0.00\n",
+        "inp": {
+          "n": 49,
+          "M": 3.9,
+          "sd": 0.7,
+          "mu": 4.0,
+          "t_true": -1
+        }
+      }
+    ],
+    "time": 618.7536504268646,
+    "field_ok": {
+      "df": 15,
+      "se": 11,
+      "t": 2,
+      "d": 4
+    },
+    "n_silent": 14,
+    "regen_total": 87,
+    "saved_vs_A": 4,
+    "damaged_vs_A": 3
+  }
+}

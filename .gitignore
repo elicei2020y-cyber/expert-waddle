@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+# веса моделей и квантованные копии — не в git
+q_cache/
+*.safetensors
+*.bin
+*.gguf
+*.pt
+hf_cache/
+.cache/
