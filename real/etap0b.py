@@ -132,41 +132,46 @@ def run_report(model, tok, inp, policy):
     se -- единственная доступная цель отмотки и при дефекте в t (t пишется
     раньше se и проверяется только после него -- см. ZADANIE.md)."""
     truth = truth_of(inp)
-    body = ""
     vals = {}
+    committed = []  # готовые строки в порядке полей; текст собирается заново, без нарезки
     events = []
     regen_total = 0
 
-    def emit(field, force_skip=0):
-        nonlocal body
-        p = build_prompt(tok, inp, body + f"{field} =")
+    def render(mark_txt=None):
+        parts = list(committed)
+        if mark_txt is not None:
+            parts.append(f"[проверка: {mark_txt}]\n")
+        return "".join(parts)
+
+    def emit(field, force_skip=0, mark_txt=None):
+        p = build_prompt(tok, inp, render(mark_txt) + f"{field} =")
         v, raw = gen_value(model, tok, p, force_skip=force_skip)
         vals[field] = v
-        line = raw.split("\n")[0].strip()
-        body += f"{field} = {line}\n" if v is not None else f"{field} = ?\n"
         return v
 
+    def commit(field, last_mark_txt):
+        if policy in ("V_text", "V_ban") and last_mark_txt is not None:
+            committed.append(f"[проверка: {last_mark_txt}]\n")
+        val_str = vals[field] if vals[field] is not None else "?"
+        committed.append(f"{field} = {val_str}\n")
+
     def rewind_field(field, mark_lines, attempt_idx):
-        """Обрезать body до конца поля перед `field`, вставить пометку
-        (если политика её предполагает) и заново породить `field`."""
-        nonlocal body
-        order_idx = FIELDS.index(field)
-        lines = body.split("\n")
-        # lines[:order_idx] -- строки полей ДО field (df[,t][,se])
-        body = "\n".join(lines[:order_idx]) + ("\n" if order_idx else "")
-        if policy in ("V_text", "V_ban"):
-            body += "[проверка: " + "; ".join(mark_lines) + "]\n"
+        """Заново породить `field`, показав пометку (если политика её
+        предполагает) только на время этой попытки."""
+        mark_txt = "; ".join(mark_lines)
+        use_mark = mark_txt if policy in ("V_text", "V_ban") else None
         force_skip = attempt_idx if policy == "V_ban" else 0
-        return emit(field, force_skip=force_skip)
+        return emit(field, force_skip=force_skip, mark_txt=use_mark), mark_txt
 
     # ---- df ----
     v = emit("df")
     df_ok = (v is not None) and legit_df(inp["n"], v)
+    last_mark = None
     if policy != "A" and not df_ok:
         for attempt in range(1, FIELD_BUDGET + 1):
             prev = vals["df"]
             mark = [f"поле df отозвано — не сходится df = n − 1 (было {prev})"]
-            new_v = rewind_field("df", mark, attempt)
+            new_v, last_mark = rewind_field("df", mark, attempt)
             regen_total += 1
             events.append(dict(field="df", attempt=attempt, prev=prev, new=new_v,
                                 mark=mark[0] if policy != "B_nomark" else None,
@@ -174,14 +179,17 @@ def run_report(model, tok, inp, policy):
             df_ok = (new_v is not None) and legit_df(inp["n"], new_v)
             if df_ok:
                 break
+    commit("df", last_mark)
 
     # ---- t (проверка отложена до se) ----
     emit("t")
+    commit("t", None)
 
     # ---- se (+ отложенная проверка t) ----
     v_se = emit("se")
     se_ok = (v_se is not None) and legit_se(inp["sd"], inp["n"], v_se)
     t_ok = (vals["t"] is not None) and legit_t(inp["M"], inp["mu"], v_se, truth["se"], vals["t"])
+    last_mark = None
     if policy != "A" and not (se_ok and t_ok):
         for attempt in range(1, FIELD_BUDGET + 1):
             prev = vals["se"]
@@ -190,7 +198,7 @@ def run_report(model, tok, inp, policy):
             else:
                 mark = [f"поле t не сошлось: t = (M − mu)/se (было t = {vals['t']}); "
                         f"se — ближайшее доступное поле для отмотки, само se установлено верно (было se = {prev})"]
-            new_v = rewind_field("se", mark, attempt)
+            new_v, last_mark = rewind_field("se", mark, attempt)
             regen_total += 1
             events.append(dict(field="se", attempt=attempt, prev=prev, new=new_v,
                                 mark=mark[0] if policy != "B_nomark" else None,
@@ -199,15 +207,17 @@ def run_report(model, tok, inp, policy):
             t_ok = (vals["t"] is not None) and legit_t(inp["M"], inp["mu"], new_v, truth["se"], vals["t"])
             if se_ok and t_ok:
                 break
+    commit("se", last_mark)
 
     # ---- d ----
     v_d = emit("d")
     d_ok = (v_d is not None) and legit_d(inp["M"], inp["mu"], inp["sd"], vals["t"], inp["n"], v_d)
+    last_mark = None
     if policy != "A" and not d_ok:
         for attempt in range(1, FIELD_BUDGET + 1):
             prev = vals["d"]
             mark = [f"поле d отозвано — не сходится d = (M − mu)/sd (было {prev})"]
-            new_v = rewind_field("d", mark, attempt)
+            new_v, last_mark = rewind_field("d", mark, attempt)
             regen_total += 1
             events.append(dict(field="d", attempt=attempt, prev=prev, new=new_v,
                                 mark=mark[0] if policy != "B_nomark" else None,
@@ -215,12 +225,14 @@ def run_report(model, tok, inp, policy):
             d_ok = (new_v is not None) and legit_d(inp["M"], inp["mu"], inp["sd"], vals["t"], inp["n"], new_v)
             if d_ok:
                 break
+    commit("d", last_mark)
 
     correct = dict(df=df_ok, t=t_ok, se=se_ok, d=d_ok)
     # молчание: поле реально исчерпало СВОЙ бюджет (по каждому полю отдельно)
     silence = (not df_ok and regen_total_field(events, "df") >= FIELD_BUDGET) or \
               (not (se_ok and t_ok) and regen_total_field(events, "se") >= FIELD_BUDGET) or \
               (not d_ok and regen_total_field(events, "d") >= FIELD_BUDGET)
+    body = "".join(committed)
     return dict(inp=inp, vals=dict(vals), truth=truth, body=body, correct=correct,
                 events=events, regen_total=regen_total, silence=silence and policy != "A")
 

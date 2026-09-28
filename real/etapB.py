@@ -134,24 +134,36 @@ def gen_value_str(model, tok, prompt, force_skip=0, max_new=14):
 
 
 def run_report(model, tok, item, policy):
+    """Никакой нарезки строк: текст перед каждой генерацией собирается
+    заново из списка уже зафиксированных строк (committed) плюс, если
+    нужно, одна транзитная строка пометки для текущей попытки. Для
+    В-текст/В-запрет пометка при фиксации поля становится постоянной
+    строкой committed (видна всем следующим полям); для В-текст-
+    стирание пометка никогда не коммитится -- видна только во время
+    генерации самой попытки."""
     truth = truth_of(item["v"])
-    body = ""
     vals = {}
+    committed = []   # список готовых строк текста, в порядке полей
     events = []
 
-    def emit(field, force_skip=0):
-        nonlocal body
-        p = build_prompt(tok, item, body + f"{field} =")
+    def render(mark_txt=None):
+        parts = list(committed)
+        if mark_txt is not None:
+            parts.append(f"[проверка: {mark_txt}]\n")
+        return "".join(parts)
+
+    def gen_field(field, force_skip=0, mark_txt=None):
+        prefix = render(mark_txt)
+        p = build_prompt(tok, item, prefix + f"{field} =")
         v, raw = gen_value_str(model, tok, p, force_skip=force_skip)
-        vals[field] = v
-        line = raw.split("\n")[0].strip()
-        body += f"{field} = {line}\n"
+        vals[field] = v if v is not None else "?"
         return v
 
     correct = {}
     for field in FIELDS:
-        emit(field)
+        gen_field(field)
         ok = (vals[field] == truth[field])
+        last_mark_txt = None
         if policy != "A" and not ok:
             for attempt in range(1, FIELD_BUDGET + 1):
                 prev = vals[field]
@@ -161,26 +173,25 @@ def run_report(model, tok, item, policy):
                                 f"дословно, для группы {group} (было {prev})")
                 else:
                     mark_txt = f"поле {field} отозвано — значение должно быть взято из текста дословно (было {prev})"
-                lines = body.split("\n")
-                idx = FIELDS.index(field)
-                body = "\n".join(lines[:idx]) + ("\n" if idx else "")
-                if policy in ("V_text", "V_ban", "V_text_erase"):
-                    body += f"[проверка: {mark_txt}]\n"
+                use_mark = mark_txt if policy in ("V_text", "V_ban", "V_text_erase") else None
                 force_skip = attempt if policy == "V_ban" else 0
-                new_v = emit(field, force_skip=force_skip)
+                new_v = gen_field(field, force_skip=force_skip, mark_txt=use_mark)
                 events.append(dict(field=field, attempt=attempt, prev=prev, new=new_v,
                                     mark=mark_txt if policy != "B_nomark" else None,
                                     changed=(new_v != prev)))
                 ok = (new_v == truth[field])
+                last_mark_txt = mark_txt
                 if ok:
                     break
-            if policy == "V_text_erase":
-                # пометка видна модели только пока перепорождается её поле;
-                # как только поле записано (верно или бюджет исчерпан),
-                # пометка убирается из видимого текста (в events остаётся).
-                body = "\n".join(l for l in body.split("\n") if not l.startswith("[проверка:"))
+        # зафиксировать поле: постоянная пометка (если В-текст/В-запрет и
+        # было хоть одно перепорождение) идёт ПЕРЕД строкой поля; для
+        # В-текст-стирание пометка не коммитится никогда.
+        if policy in ("V_text", "V_ban") and last_mark_txt is not None:
+            committed.append(f"[проверка: {last_mark_txt}]\n")
+        committed.append(f"{field} = {vals[field]}\n")
         correct[field] = ok
 
+    body = "".join(committed)
     silence = policy != "A" and any(
         not correct[f] and sum(1 for e in events if e["field"] == f) >= FIELD_BUDGET
         for f in FIELDS
@@ -220,9 +231,20 @@ def load_quantized(model_id, bits, cache_dir=Q_CACHE):
     return model
 
 
-def run_policy(model, tok, inputs, policy, label):
+def run_policy(model, tok, inputs, policy, label, jsonl_path=None):
     t0 = time.time()
-    log = [run_report(model, tok, it, policy) for it in inputs]
+    log = []
+    fh = open(jsonl_path, "a") if jsonl_path else None
+    try:
+        for it in inputs:
+            r = run_report(model, tok, it, policy)
+            log.append(r)
+            if fh:
+                fh.write(json.dumps(dict(policy=policy, **r), ensure_ascii=False, default=str) + "\n")
+                fh.flush()
+    finally:
+        if fh:
+            fh.close()
     dt = time.time() - t0
     field_ok = {f: sum(1 for r in log if r["correct"][f]) for f in FIELDS}
     total = sum(field_ok.values())

@@ -136,46 +136,58 @@ def gen_value(model, tok, prompt, force_skip=0, max_new=12):
 def run_report(model, tok, inp, policy):
     """policy: A | B_nomark | V_text | V_ban.
     Каждое поле проверяется сразу после печати (постановка df,se,t,d) --
-    отмотка "на одно поле" = отмотка "к происхождению": Г не нужна."""
+    отмотка "на одно поле" = отмотка "к происхождению": Г не нужна.
+
+    Текст перед каждой генерацией собирается заново из committed (список
+    готовых строк), никакой нарезки по номеру строки (см. real/brak/ --
+    баг с lines[:idx], который путал нумерацию строк, когда постоянные
+    пометки сдвигали её)."""
     truth = truth_of(inp)
-    body = ""
     vals = {}
+    committed = []
     events = []
     regen_total = 0
 
-    def emit(field, force_skip=0):
-        nonlocal body
-        p = build_prompt(tok, inp, body + f"{field} =")
+    def render(mark_txt=None):
+        parts = list(committed)
+        if mark_txt is not None:
+            parts.append(f"[проверка: {mark_txt}]\n")
+        return "".join(parts)
+
+    def gen_field(field, force_skip=0, mark_txt=None):
+        prefix = render(mark_txt)
+        p = build_prompt(tok, inp, prefix + f"{field} =")
         v, raw = gen_value(model, tok, p, force_skip=force_skip)
         vals[field] = v
-        line = raw.split("\n")[0].strip()
-        body += f"{field} = {line}\n" if v is not None else f"{field} = ?\n"
         return v
 
     correct = {}
     for field in FIELDS:
-        emit(field)
+        gen_field(field)
         ok = check_field(field, inp, truth, vals)
+        last_mark_txt = None
         if policy != "A" and not ok:
             for attempt in range(1, FIELD_BUDGET + 1):
                 prev = vals[field]
                 mark_txt = f"поле {field} отозвано — не сходится {FORMULA[field]} (было {prev})"
-                lines = body.split("\n")
-                idx = FIELDS.index(field)
-                body = "\n".join(lines[:idx]) + ("\n" if idx else "")
-                if policy in ("V_text", "V_ban"):
-                    body += f"[проверка: {mark_txt}]\n"
+                use_mark = mark_txt if policy in ("V_text", "V_ban") else None
                 force_skip = attempt if policy == "V_ban" else 0
-                new_v = emit(field, force_skip=force_skip)
+                new_v = gen_field(field, force_skip=force_skip, mark_txt=use_mark)
                 regen_total += 1
                 events.append(dict(field=field, attempt=attempt, prev=prev, new=new_v,
                                     mark=mark_txt if policy != "B_nomark" else None,
                                     changed=(new_v != prev)))
                 ok = check_field(field, inp, truth, vals)
+                last_mark_txt = mark_txt
                 if ok:
                     break
+        if policy in ("V_text", "V_ban") and last_mark_txt is not None:
+            committed.append(f"[проверка: {last_mark_txt}]\n")
+        val_str = vals[field] if vals[field] is not None else "?"
+        committed.append(f"{field} = {val_str}\n")
         correct[field] = ok
 
+    body = "".join(committed)
     silence = policy != "A" and any(
         not correct[f] and sum(1 for e in events if e["field"] == f) >= FIELD_BUDGET
         for f in FIELDS
