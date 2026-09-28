@@ -231,9 +231,7 @@ def run_policy(model, tok, inputs, policy, label):
 
 
 def save(results, path="real/etapB_log.json"):
-    def strip(r):
-        return r
-    out = {k: {kk: (vv if kk != "log" else vv) for kk, vv in v.items()} for k, v in results.items()}
+    out = {k: (v if isinstance(v, dict) else v) for k, v in results.items()}
     with open(path, "w") as f:
         json.dump(out, f, ensure_ascii=False, indent=2, default=str)
 
