@@ -133,7 +133,7 @@ def run_report(model, tok, inp, policy, log):
 
     def emit(field):
         nonlocal body
-        p = build_prompt(tok, inp, body + f"{field} = ")
+        p = build_prompt(tok, inp, body + f"{field} =")
         v, raw = gen_value(model, tok, p, banned[field])
         vals[field] = v
         body += f"{field} = {raw.split(chr(10))[0].strip()}\n" if v is not None else f"{field} = ?\n"

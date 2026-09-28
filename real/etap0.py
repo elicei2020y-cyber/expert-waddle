@@ -52,7 +52,8 @@ NUM_RE = re.compile(r"[-+]?\d*\.?\d+")
 
 
 def gen_field(model, tok, prompt_ids, max_new=12):
-    """Дописать 'имя = ' и дать модели дописать число до перевода строки."""
+    """Дописать 'имя =' (без хвостового пробела -- см. real/brak/README.md)
+    и дать модели дописать число до перевода строки."""
     ids = tok(prompt_ids, return_tensors="pt").input_ids
     with torch.no_grad():
         out = model.generate(
@@ -100,7 +101,7 @@ def build_chat_prefix(tok, inp, done_fields):
     body = ""
     for f in done_fields:
         body += f"{f} = {done_fields[f]}\n"
-    return prefix + body + f"{FIELDS[len(done_fields)]} = " if len(done_fields) < len(FIELDS) else prefix + body
+    return prefix + body + f"{FIELDS[len(done_fields)]} =" if len(done_fields) < len(FIELDS) else prefix + body
 
 
 def run_report(model, tok, inp):

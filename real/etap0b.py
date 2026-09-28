@@ -139,7 +139,7 @@ def run_report(model, tok, inp, policy):
 
     def emit(field, force_skip=0):
         nonlocal body
-        p = build_prompt(tok, inp, body + f"{field} = ")
+        p = build_prompt(tok, inp, body + f"{field} =")
         v, raw = gen_value(model, tok, p, force_skip=force_skip)
         vals[field] = v
         line = raw.split("\n")[0].strip()
